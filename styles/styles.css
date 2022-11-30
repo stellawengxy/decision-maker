@@ -1,9 +1,117 @@
 /* ===== YOUR CSS GOES HERE ===== */
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap');
 body {
-    background: magenta;
+    width: 60%;
+    margin: auto;
+    text-align: center;
 }
-p {
-    font-size: 2em;
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Courgette', cursive;
+
+}
+
+h2 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+
+}
+
+h3 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    align-content: center;
+}
+
+
+#flower {
+    background: url("https://i.pinimg.com/originals/47/b8/d6/47b8d65b2d9f34149689d60af5530aeb.png"
+);
+
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+
+}
+
+#wheel {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6645/6645381.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  
+    margin: 3rem;
+    font-size: 2rem;
+    border: none;
+}
+
+#coin {
+    background-image: url("https://e7.pngegg.com/pngimages/16/648/png-clipart-computer-icons-coin-money-coin-trademark-logo-thumbnail.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  
+    margin: 3rem;
+    font-size: 2rem;
+    border: none;
+}
+
+
+#flower:hover span{
+display:none;
+}
+
+#flower:hover::after {
+content: "Flower of Answers";
+background-color: white;
+width: 10rem;
+}
+
+#wheel:hover span{
+    display:none;
+    }
+    
+    #wheel:hover::after {
+    content: "Spinning Wheel";
+    background-color: white;
+    width: 10rem;
+    }
+
+    #coin:hover span{
+        display:none;
+        }
+        
+        #coin:hover::after {
+        content: "Flipping Coin";
+        background-color: white;
+        }
+
+
+
+.methods h3 {
+    border: 2px solid black;
+    width: fit-content;
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    
+}
+
+a:link { text-decoration: none;
+display: flex;
+justify-content: center;
+align-content: center;
 }
