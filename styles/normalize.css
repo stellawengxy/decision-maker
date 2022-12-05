@@ -347,3 +347,257 @@ template {
 [hidden] {
   display: none;
 }
+.rose {
+  width: 100px;
+  height: 300px;
+  margin: auto;
+  padding: 50px;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.rose div {
+  position: absolute;
+}
+
+.rose .rose-petals > div {
+  background-color: #f05858;
+  width: 45px;
+  height: 80px;
+  position: absolute;
+}
+
+.rose .rose-petals > div:nth-child(1) {
+  border-radius: 15px;
+  left: 20px;
+  top: -6px;
+  background-color: #d52d2d;
+}
+
+.rose .rose-petals > div:nth-child(2), .rose .rose-petals > div:nth-child(4), .rose .rose-petals > div:nth-child(6), .rose .rose-petals > div:nth-child(8){
+  border-radius: 0px 35px 0px 35px;
+  background: #b81b1b;
+  left: 0;
+  transform-origin: bottom right;
+}
+
+.rose .rose-petals > div:nth-child(3), .rose .rose-petals > div:nth-child(5), .rose .rose-petals > div:nth-child(7), .rose .rose-petals > div:nth-child(9) {
+  border-radius: 35px 0px 35px 0px;
+  left: 40px;
+  transform-origin: bottom left;
+}
+
+
+.rose .rose-petals > div:nth-child(2) {
+  -moz-animation: openRose2 3s ease-in-out;
+  -webkit-animation: openRose2 3s ease-in-out;
+  animation: openRose2 3s ease-in-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: 7;
+  background: #9e1818;
+  top: 10px;
+  height: 70px;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.rose .rose-petals > div:nth-child(3) {
+  z-index: 6;
+  background: #9e1818;
+  top: 10px;
+  height: 70px;
+}
+
+.rose .rose-petals > div:nth-child(4) {
+  z-index: 5;
+  background: #b81b1b;
+  top: 5px;
+  height: 75px;
+}
+
+.rose .rose-petals > div:nth-child(5) {
+  z-index: 4;
+  background: #b81b1b;
+  top: 5px;
+  height: 75px;
+}
+.rose .rose-petals > div:nth-child(6) {
+  z-index: 3;
+  background: #b81b1b;
+  top: 5px;
+  height: 75px;
+}
+
+.rose .rose-petals > div:nth-child(7) {
+  z-index: 2;
+  background: #b81b1b;
+  top: 5px;
+  height: 75px;
+}
+.rose .rose-petals > div:nth-child(8) {
+  z-index: 1;
+  background: #c92020;
+  top: "";
+  height: "";
+}
+
+.rose .rose-petals > div:nth-child(9) {
+  z-index: 0;
+  background: #c92020;
+  top: "";
+  height: "";
+}
+
+.rose .rose-leaves > div:nth-last-child(1) {
+  width: 55px;
+  height: 30px;
+  background: #338f37;
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.rose .rose-leaves > div:nth-child(1) {
+  width: 6px;
+  height: 230px;
+  border: none;
+  top: 80px;
+  background: #066406;
+  left: 40px;
+}
+.rose .thorns > div {
+  width: 30px;
+  height: 30px;
+  background: #066406;
+  top: 100px;
+  left: 10px;
+}
+.rose .thorns > div:after {
+  width: 41px;
+  height: 31px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: white;
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 17px;
+}
+.rose .thorns > div:before {
+  width: 41px;
+  height: 31px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: white;
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  z-index: 0;
+}
+
+.rose .thorns > div:nth-child(2) {
+  top: 150px;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 45px;
+}
+.rose .thorns > div:nth-child(3) {
+  top: 180px;
+}
+.container .thorns > div:nth-child(4) {
+  top: 220px;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 45px;
+}
+
+@-moz-keyframes openRose2 {
+  50% {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 80px;
+    left: 100px;
+  }
+  100% {
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    top: 210px;
+    left: -30px;
+  }
+}
+@-ms-keyframes openRose2 {
+  50% {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 80px;
+    left: 100px;
+  }
+  100% {
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    top: 210px;
+    left: -30px;
+  }
+}
+@keyframes openRose2 {
+  50% {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 80px;
+    left: 100px;
+  }
+  100% {
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    top: 210px;
+    left: -30px;
+  }
+}
+
+#flowerStartBtn{
+ text-align: absolute;
+ margin-left:auto;
+ margin-right:auto;
+ margin-bottom:50px;
+ display: grid;
+ grid-template-columns: 200px;
+ grid-row-gap: 50rem;
+}
+
+#flowerAnswerBox{
+  margin:auto;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 400px;
+  grid-row-gap: 100rem;
+}
+
