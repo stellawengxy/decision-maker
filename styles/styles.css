@@ -57,7 +57,7 @@ h3 {
     border: none;
 }
 
-#coinimage {
+#coinlink {
    
     width: 8rem;
     height: 8rem;
@@ -638,5 +638,109 @@ form{
 
 
 
-/* test */
+/* coin page */
 
+.stats-container {
+  background-color:rgb(249, 244, 244);
+  width: 50%;
+  height: 50%;
+  padding: 4rem;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 1rem;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+
+
+}
+
+
+.stats {
+  text-align: right;
+  color: black;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.coin {
+  height: 10rem;
+  width: 10rem;
+  margin: auto;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.coin img{
+  width: 20rem;
+
+
+}
+
+.heads, .tails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+
+}
+
+.tails{
+  
+  transform: rotateX(180deg);
+  
+}
+
+@keyframes spin-tails{
+  0%{
+    transform: rotateX(0);
+  }
+  100%{
+    transform: rotateX(1980deg);
+  }
+}
+
+@keyframes spin-heads{
+  0%{
+    transform: rotateX(0);
+  }
+  100%{
+    transform: rotateX(2160deg);
+  }
+}
+
+.coin-buttons {
+display: flex;
+justify-content: space-between;
+}
+
+.coin-buttons button {
+width: 120px;
+padding: 10px 0;
+border: 2.5px solid pink;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#flip-button{
+  background-color: pink;
+  color: white;
+
+}
+
+#flip-button:disabled{
+  background: white;
+  border-color: white;
+  color: black;
+
+}
+
+#reset-button{
+  background-color: white;
+  color: pink;
+
+}

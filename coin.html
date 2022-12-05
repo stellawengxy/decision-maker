@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
 </head>
-<body class="coinpage">
-    <h2>Coin Flipping</h2>
-  <aside> Click coin to flip</aside>
-  <h3>Answer box</h3>
+<body id="coins">
+  
+<div class="stats-container">
+  <div class="stats">
+    <p id="heads-count">Heads: </p>
+    <p id="tails-count">Tails: </p>
+  </div>
+  <div class="coin">
+    <div class="heads">
+     <img src="https://lh3.googleusercontent.com/T7JBKTufYIG68YaKrpMhFAzSK-WnLG2f1LLULALBa7kkO4kfaGvNmtlJDFzIKBMRpcQjzJr0wnv-UmnGSK1ZL3TGr2plaJO6Un61DzxfBxomI4fEHg82aemKw90qCVP_Y0NcrL6I=w600-h315-p-k">
+
+
+    </div>
+    <div class="tails">
+     <img src="https://lh3.googleusercontent.com/bZ7C_I9N4v5uW4kAsgl_DC_LBAbYA-OcEFbzKdfpdxYCp-Eg-1j0WrID1bE0R1z-hk0sohn828_kFww-LnOOVoGRITW1FbC10z-CSuQe9ZpzQitxrlwCi-48spJLsF2MiLwjuwaA=w600-h315-p-k">
+
+
+
+    </div>
+  </div>
+  <div class="coin-buttons">
+    <button id="flip-button">
+      Flip Coin
+    </button>
+    <button id="reset">
+      Reset
+    </button>
+  </div>
+</div>
 
 </body>
 </html>
