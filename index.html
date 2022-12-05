@@ -17,57 +17,102 @@
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
   </head>
+  
+  
   <body>
     <!-- YOUR HTML GOES HERE -->
 
 
 
 <article>
+
+  
   <h1>Decision Maker</h1>
   <h2>Having a hard time making your decision? No worries. We are here to help you!</h2>
 
 
 
 
-  <h3>What's Your Question?</h3>
-  <div class="col-auto">
-        <label for="num-input" class="form-label"></label>
+  <div class="slider">
+    <div class="slide active">
+   
+      <div class="info">
+        <h2>What's your question?</h2>
+        <div class="field">
+          <input type="text" id="questionInput">
+          </div>
       </div>
-      <div class="col-auto">
-        <input id="num-input" type="question" class="form-control">
-      </div>
-  <h3>What are your choices?</h3>
-  <div class="col-auto">
-        <label for="question-input" class="form-label"></label>
-      </div>
-      <div class="col-auto">
-        <input id="question-input" type="question" class="form-control">
-      </div>
-      <div class="col-auto">
-        <label for="question-input" class="form-label"></label>
-      </div>
-      <div class="col-auto">
-        <input id="question-input" type="question" class="form-control">
-      </div>
-      <p>+ add more</p>
-    <h3> Here Are Your Options:</h3>
+    </div>
     
- 
+   
+    <div class="slide">
+      <div class="info">
+        <h2>What are your choices?</h2>
+
+        <form action="" method="post" autocomplete="off">
+
+          <div class="field">
+            <input type="text" name="notes[]">
+            <span onclick="addField(this)">+</span>
+            <span onclick="removeField(this)">-</span>
+          </div>
+      
+          <button class="next"> Next <button>
+      
+        </form>
+      
+        <script src="script.js"></script> 
+        
+        
+    </div>
+    </div>
+  
+    <div class="slide">
+      <div class="info">
+        <h2>Here are your options</h2>
+        <div id="methods">
+    
+          <a id="flower"><img id="flowerimage" src="https://i.pinimg.com/originals/47/b8/d6/47b8d65b2d9f34149689d60af5530aeb.png">  </a>
+        
+          <a id="wheel"> <img id="wheelimage" src="https://cdn-icons-png.flaticon.com/512/6645/6645381.png"> </a>
+        
+          <a id="coin"> <img id="coinimage" src="https://i.pinimg.com/originals/bd/f4/a4/bdf4a4035d7aa53773dc70d7c12c1692.png"> </a> 
+        
+          
+        </div>
+      </div>
+    </div>
+
+  
+
+
+    <div class="navigation">
+      
+      <i class="prev-btn"><p class="btn"><</p></i>
+      <i class="next-btn"> <p class="btn">></p> </i>
+    </div>
+
+
+    <div class="navigation-visibility">
+      <div class="slide-icon active"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      
+     
+    </div>
+
+  
+  </div>
+
+
+  
 
 
   </article>
   
   
   
-  <div class=”container”>
-    
-    <a id="flower">  </a>
   
-    <a id="wheel">  </a>
-  
-    <a id="coin"> </a> 
-  
-  </div>
 
 
  
