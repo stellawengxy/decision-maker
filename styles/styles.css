@@ -100,8 +100,6 @@ width: 10rem;
         }
         
         #coin:hover::after {
-        background-color: white;
-        filter: sepia(100%);
     -webkit-filter: sepia(100%);   
         }
 
