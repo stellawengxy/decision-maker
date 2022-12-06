@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/coin.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 </head>
-
 <body id="coins">
-  
+
 <div class="stats-container">
+  <h2 id="cointitle">Coin Flipping</h2>
   <div class="stats">
-    <p id="heads-count">Heads: </p>
-    <p id="tails-count">Tails: </p>
+    <p id="heads-count">Heads: h</p>
+    <p id="tails-count">Tails: h</p>
   </div>
   <div class="coin">
     <div class="heads">
@@ -29,14 +29,16 @@
 
     </div>
   </div>
+  <div class="answer-box">
+    <input>
+  </div>
   <div class="coin-buttons">
     <button id="flip-button">
       Flip Coin
     </button>
-    <button id="reset">
-      Reset
-    </button>
+    
   </div>
+  
 </div>
 
 </body>

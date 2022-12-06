@@ -3,28 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap');
 
-article {
 
-    margin-top: auto;
-}
 body {
     
     width: 60%;
     margin: auto;
     text-align: center;
+    background-color: rgb(247, 129, 149);
+    color: white;
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: 'Courgette', cursive;
 
 }
 
 h2 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin: 0 3rem 0 3rem;
+    padding: 30px;
 
 }
 
@@ -36,7 +35,9 @@ h3 {
     align-content: center;
 }
 
-
+li {
+  padding: 50px;
+}
 #flowerimage {
    
 
@@ -69,6 +70,9 @@ h3 {
 #methods {
     display: flex;
     justify-content: space-around;
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px;
 }
 #flower:hover span{
 display:none;
@@ -97,6 +101,8 @@ width: 10rem;
         
         #coin:hover::after {
         background-color: white;
+        filter: sepia(100%);
+    -webkit-filter: sepia(100%);   
         }
 
 
@@ -476,40 +482,58 @@ form{
 
 .stats-container {
   background-color:rgb(249, 244, 244);
-  width: 50%;
-  height: 50%;
-  padding: 4rem;
+  width: 70%;
+  padding: 50px;
   position: absolute;
+
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
-  border-radius: 1rem;
+  border-radius: 10px;
   -webkit-perspective: 300px;
   perspective: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 
 }
 
-
+#cointitle {
+  font-weight: 800;
+  font-size: 4rem;
+}
 .stats {
-  text-align: right;
-  color: black;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   line-height: 25px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: larger;
+  font-weight: 800;
+  background-color: rgb(247, 129, 149);
+  border-radius: 25px;
+  width: 40%;
+  height: 40%;
 }
 
 .coin {
-  height: 10rem;
-  width: 10rem;
-  margin: auto;
+
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: -50px;
 
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
 .coin img{
-  width: 20rem;
-
+  padding-top: 80px;
+  width: 300px;
+  margin-left: 8px;
 
 }
 
@@ -529,6 +553,9 @@ form{
   
 }
 
+.answer-box {
+  padding: 30px;
+}
 @keyframes spin-tails{
   0%{
     transform: rotateX(0);
@@ -550,25 +577,29 @@ form{
 .coin-buttons {
 display: flex;
 justify-content: space-between;
+
 }
 
 .coin-buttons button {
 width: 120px;
 padding: 10px 0;
-border: 2.5px solid pink;
+border: 2.5px solid rgb(247, 129, 149);
 border-radius: 5px;
 cursor: pointer;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+font-size: large;
+font-weight: 600;
 }
 
 #flip-button{
-  background-color: pink;
+  background-color: rgb(247, 129, 149);
   color: white;
 
 }
 
 #flip-button:disabled{
   background: white;
-  border-color: white;
+  border-color: rgb(247, 129, 149);
   color: black;
 
 }
