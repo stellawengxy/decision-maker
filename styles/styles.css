@@ -710,7 +710,7 @@ font-weight: 600;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 8000px) {
   body {
     min-width: 100%;
     width: fit-content;
@@ -720,4 +720,14 @@ font-weight: 600;
     display: flex;
     justify-content: center;
   }
+}
+
+
+#answer-box {
+  color: black;
+  background-color: rgb(251, 246, 246);
+  border-radius: 25px;
+width: 50%;
+height: 50%;
+margin-bottom: 30px;
 }
