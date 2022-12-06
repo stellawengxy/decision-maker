@@ -513,7 +513,7 @@ button.next{
 /* coin page */
 
 #coins {
-  margin-top: 25%;
+  margin-top: 400px;
 }
 
 .stats-container {
@@ -733,7 +733,6 @@ font-weight: 600;
 @media screen and (max-width: 8000px) {
   body {
     min-width: 100%;
-    width: fit-content;
 
     position:relative;
     background-color: rgb(253, 223, 228);
