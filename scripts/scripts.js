@@ -2,66 +2,10 @@
 
 
 
-const slider = document.querySelector(".slider");
-    const nextBtn = document.querySelector(".next-btn");
-    const prevBtn = document.querySelector(".prev-btn");
-    const slides = document.querySelectorAll(".slide");
-    const slideIcons = document.querySelectorAll(".slide-icon");
-    const numberOfSlides = slides.length;
-    var slideNumber = 0;
 
-    const input = document.getElementById("questionInput");
+   
 
 
-
-    //image slider next button
-    
-    nextBtn.addEventListener("click", () => {
-        if(input.value.length > 0) {
-        
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-      });
-
-      slideNumber++;
-
-      if(slideNumber > (numberOfSlides - 1)){
-        slideNumber = (numberOfSlides - 1);
-      }
-
-      slides[slideNumber].classList.add("active");
-      slideIcons[slideNumber].classList.add("active");
-
-    }
-    });
-
-
-
-
-
-    //image slider previous button
-    prevBtn.addEventListener("click", () => {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-      });
-
-      slideNumber--;
-
-      if(slideNumber < 0){
-        slideNumber = 0;
-      }
-
-      slides[slideNumber].classList.add("active");
-      slideIcons[slideNumber].classList.add("active");
-    });
-
-    
 
 
 
@@ -140,53 +84,3 @@ function removeField(minusElement) {
 
 
 
-
-/* coin page */
-
-let heads = 0;
-let tails = 0;
-const coin = document.querySelector(".coin");
-const flipBtn = document.getElementById("flip-button");
-const resetBtn = document.getElementById("reset-button");
-
-
-flipBtn.addEventListener("click", () => {
-let i = Math.floor(Math.random() * 2);
-coin.style.animation = "none";
-if(i){
-  setTimeout(function(){
-    coin.style.animation = "spin-heads 3s forwards";
-  }, 100);
-  heads++;
-
-}
-else{
-  setTimeout(function(){
-    coin.style.animation = "spin-tails 3s forwards";
-  }, 100);
-  tails++;
-
-
-}
-});
-
-
-flipBtn.addEventListener("click", () => {
-let i = Math.floor(Math.random() * 2);
-coin.style.animation = "none";
-if(i){
-  setTimeout(function(){
-    coin.style.animation = "spin-heads 3s forwards";
-  }, 100);
-  heads++;
-
-}
-else{
-  setTimeout(function(){
-    coin.style.animation = "spin-tails 3s forwards";
-  }, 100);
-  tails++;
-
-
-}
-});
