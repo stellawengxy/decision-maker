@@ -6,7 +6,7 @@
 
 body {
     
-    width: 60%;
+    width: 50%;
     margin: auto;
     text-align: center;
     background-color: rgb(251, 238, 240);
@@ -708,4 +708,16 @@ font-weight: 600;
   }
 
 
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    min-width: 100%;
+    width: fit-content;
+
+    position:relative
+    background-color: rgb(253, 223, 228);
+    display: flex;
+    justify-content: center;
+  }
 }
