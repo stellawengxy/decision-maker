@@ -554,7 +554,7 @@ button.next{
 
 }
 
-#cointitle {
+.individualtitle {
   font-weight: 800;
   font-size: 4rem;
   color: rgb(248, 94, 120);
@@ -691,6 +691,12 @@ font-weight: 600;
   position: fixed;
   z-index: 4;
 }
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1250px) {
