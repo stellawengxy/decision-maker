@@ -670,6 +670,22 @@ font-weight: 600;
 
 
 /*gacha page */
+.insideCapsule {
+  width: 4%;
+  height: 5em;
+  margin: 2em auto;
+  border-radius: 50px;
+  background-color: #ff3385;
+  border-left: 3em solid white;
+  z-index: 5;
+}
+
+
+.gacha{
+  margin: auto;
+}
+
+
 
 #gachabase{
   display: block;
@@ -689,10 +705,15 @@ font-weight: 600;
   display: block;
   width: 30%;
   position: fixed;
-  z-index: 4;
+  z-index: 3;
 }
 
-
+#gachaBtn{
+  position: absolute;
+  left: 20rem;
+  bottom: 5rem;
+  font-size: 30px;
+}
 
 
 
