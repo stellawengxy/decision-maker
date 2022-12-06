@@ -578,3 +578,29 @@ cursor: pointer;
   color: pink;
 
 }
+
+
+
+
+
+/*gacha page */
+#gachabase{
+  display: block;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+}
+
+#gachabutton{
+  display: block;
+  width: 30%;
+  position: fixed;
+  z-index: 2;
+}
+
+#gachaWindow{
+  display: block;
+  width: 30%;
+  position: fixed;
+  z-index: 4;
+}
