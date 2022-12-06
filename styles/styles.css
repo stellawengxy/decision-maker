@@ -9,12 +9,19 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
-    background-color: rgb(247, 129, 149);
+    background-color: rgb(253, 223, 228);
     color: white;
 }
 
+
+article {
+  background-color:rgb(245, 141, 159);
+border-radius: 25px;
+border: 300px;
+padding: 50px;
+}
 h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'Courgette', cursive;
 
 }
@@ -23,7 +30,7 @@ h2 {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 2rem;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
 
 }
 
@@ -44,12 +51,10 @@ li {
     width: 8rem;
     height: 8rem;
     font-size: 2rem;
-    display: flex;
-    text-align: center;
 
 }
 
-#wheelimage {
+#gachaimage {
     
     width: 8rem;
     height: 8rem;
@@ -57,22 +62,31 @@ li {
     font-size: 2rem;
     border: none;
 }
+#coinimage {
+  width: 8rem;
+  height: 8rem;
 
-#coinlink {
-   
-    width: 8rem;
-    height: 8rem;
+  font-size: 2rem;
+  border: none;
+}
+
+.method {
+  display: flex;
   
-    font-size: 2rem;
-    border: none;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 #methods {
     display: flex;
-    justify-content: space-around;
+  flex-wrap: nowrap;
+
+  justify-content: space-around;
     background-color: white;
     border-radius: 25px;
     padding: 40px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 700;
 }
 #flower:hover span{
 display:none;
@@ -85,11 +99,11 @@ background-color: white;
 width: 10rem;
 }
 
-#wheel:hover span{
+#gacha:hover span{
     display:none;
     }
     
-    #wheel:hover::after {
+    #gacha:hover::after {
     
     background-color: white;
     width: 10rem;
@@ -119,7 +133,10 @@ justify-content: center;
 align-content: center;
 }
 
+a {
 
+  color: black;
+}
 
 
 /* input choices */
@@ -479,7 +496,7 @@ form{
 /* coin page */
 
 .stats-container {
-  background-color:rgb(249, 244, 244);
+  background-color:rgb(253, 240, 240);
   width: 70%;
   padding: 50px;
   position: absolute;
@@ -501,6 +518,7 @@ form{
 #cointitle {
   font-weight: 800;
   font-size: 4rem;
+  color: rgb(247, 129, 149);
 }
 .stats {
   margin-top: 30px;
@@ -511,7 +529,7 @@ form{
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   font-size: larger;
   font-weight: 800;
-  background-color: rgb(247, 129, 149);
+  background-color: rgb(248, 94, 120);
   border-radius: 25px;
   width: 40%;
   height: 40%;
