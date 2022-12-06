@@ -51,12 +51,11 @@ li {
   padding: 50px;
 }
 #flowerimage {
-   
-
+  
     width: 8rem;
     height: 8rem;
     font-size: 2rem;
-
+    border: none;
 }
 
 #gachaimage {
@@ -107,34 +106,9 @@ a:hover {
   color: rgb(247, 129, 149);
 }
 
-#flower:hover span{
-display:none;
-}
 
-#flower:hover::after {
-    filter: sepia(100%);
-    -webkit-filter: sepia(100%);    
-background-color: white;
-width: 10rem;
-}
 
-#gacha:hover span{
-    display:none;
-    }
     
-    #gacha:hover::after {
-    
-    background-color: white;
-    width: 10rem;
-    }
-
-    #coin:hover span{
-        display:none;
-        }
-        
-        #coin:hover::after {
-    -webkit-filter: sepia(100%);   
-        }
 
 .answer-box {
   background-color: white;
@@ -559,8 +533,9 @@ button.next{
   font-size: 4rem;
   color: rgb(248, 94, 120);
   font-family: 'Courgette', cursive;
-
 }
+
+
 .stats {
   margin-top: 30px;
   text-align: center;
@@ -711,6 +686,9 @@ font-weight: 600;
 
 }
 
+
+
+
 @media screen and (max-width: 950px) {
   h1 {
     font-size: 4rem;
@@ -729,7 +707,7 @@ font-weight: 600;
     min-width: 100%;
     width: fit-content;
 
-    position:relative
+    position:relative;
     background-color: rgb(253, 223, 228);
     display: flex;
     justify-content: center;
