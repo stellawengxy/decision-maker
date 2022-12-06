@@ -231,6 +231,7 @@ form{
 	transition: all 0.3s;
 	font-weight: bold;
 	border: thin solid #d4d4d4; 
+  color: rgb(245, 141, 159);
 }
 .field span:last-child{
 	display: none;
@@ -246,6 +247,12 @@ form{
 	border: thin solid red;
 	color: #fff;
 }
+
+button.next{
+  display: none;
+}
+
+
 
 .rose {
   width: 100px;
@@ -663,6 +670,7 @@ font-weight: 600;
 
 
 /*gacha page */
+
 #gachabase{
   display: block;
   width: 30%;
