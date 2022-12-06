@@ -82,18 +82,18 @@ function removeField(minusElement) {
 
 
 
-
-
 /* coin page */
 
-let heads = 0;
-let tails = 0;
+/*let heads = 0;
+let tails = 0;*/
 const coin = document.querySelector(".coin");
 const flipBtn = document.getElementById("flip-button");
 const resetBtn = document.getElementById("reset-button");
 /*let headsChoice = document.querySelector("#head-counts");
 let tailsChoice = document.querySelector("#tails-count");
 */
+let headsBox = document.querySelector("#heads-count");
+
 
 
 

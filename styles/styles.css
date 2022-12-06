@@ -88,6 +88,20 @@ li {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 700;
 }
+
+a {
+padding: 10px;
+}
+
+a:link {
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: rgb(247, 129, 149);
+}
+
 #flower:hover span{
 display:none;
 }
