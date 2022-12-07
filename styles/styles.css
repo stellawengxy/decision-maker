@@ -693,7 +693,7 @@ font-weight: 600;
 #gachaBtn{
   position: absolute;
   left: 20rem;
-  bottom: 2rem;
+  bottom: 0;
   font-size: 30px;
 }
 

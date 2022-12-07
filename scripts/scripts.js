@@ -70,7 +70,7 @@ function removeField(minusElement) {
     // takes in one parameter, a value in the array
     // returns and index/location of where the value is in the array
     
-    // to get the value, we call minusElement.parentElement.firstElementChild.value
+    // to get the value,  call minusElement.parentElement.firstElementChild.value
     // the first child of the parent is always the textbox
     
     userInput.indexOf(minusElement.parentElement.firstElementChild.value),
