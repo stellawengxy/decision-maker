@@ -1,13 +1,13 @@
 let gachaBtn = document.querySelector("#gachaBtn");
-// history list
+
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 let content_text = document.querySelector('#content_text');
-// capsule Element
+
 let capsuleEle = document.querySelector("#capsule");
 
 let HMLTStr = ``;
 
-// init
+
 const init = () => {
   if (choicesListLoc && choicesListLoc.length > 0) {
     for (let index = 1; index <= choicesListLoc.length; index++) {
@@ -68,16 +68,6 @@ gachaBtn.addEventListener("click", () => {
     currentClass = currentClass += ' drop_Y';
     document.querySelector(".dispenseOutput").className = currentClass;
 
-    // $(".dispenseOutput").removeClass("none").addClass("drop_Y");
-    //  setTimeout(function (){
-    //    // 出奖品
-    //  for (var i = 0; i < jiangpin.length; i++ ) {
-    //    if (number == i) {
-    //      $("#jianpin_one").show();
-    //      $("#jianpin_name").text(jiangpin[number])
-    //    }
-    //  }
-    // },900);
   }, 1100);
 
   setTimeout(function () {
