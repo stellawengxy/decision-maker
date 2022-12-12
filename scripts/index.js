@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 
 // 每次刷新都会将localStorage清空
 let choicesList = JSON.parse(sessionStorage.getItem("choicesList"));
+=======
+// 每次刷新都会将localStorage清空
+let choicesList = JSON.parse(localStorage.getItem("choicesList"));
+>>>>>>> a3e61b94312127d033c016aae2a9d44306689b1a
 let HTMLStr = ``;
 // 如果里面存在一个值的话 就将其清空
 if (choicesList && choicesList.length > 0) {
