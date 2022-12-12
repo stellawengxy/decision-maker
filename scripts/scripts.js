@@ -75,4 +75,4 @@ function removeField(minusElement) {
     sessionStorage.setItem('choicesList',JSON.stringify(userInput));
   minusElement.parentElement.remove();
   console.log(userInput);
-}
+};

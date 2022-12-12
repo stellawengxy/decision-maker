@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1d24ff884411e69d910237839ccaa28d69c46635
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 
 const tailsValue = choicesListLoc[1];
@@ -39,5 +42,9 @@ function disableButton() {
   setTimeout(function () {
     flipBtn.disabled = false;
     answerBoxP.innerHTML = choicesListLoc[randoms === 0 ? 1 : 0];
+<<<<<<< HEAD
+  }, 3100)
+=======
   }, 3100);
+>>>>>>> 1d24ff884411e69d910237839ccaa28d69c46635
 };
