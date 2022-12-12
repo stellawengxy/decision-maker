@@ -27,17 +27,17 @@ gachaBtn.addEventListener("click", () => {
       ""
     );
     capsule_ClassName = document.querySelector(`.capsule_${index}`).className;
-    // console.log(`${capsule_ClassName} wieyi_${index}`);
+    // console.log(`${capsule_ClassName} move_${index}`);
     document.querySelector(
       `.capsule_${index}`
-    ).className = `${capsule_ClassName} wieyi_${index}`;
+    ).className = `${capsule_ClassName} move_${index}`;
   }
 
   setTimeout(function () {
     for (let index = 1; index <= choicesListLoc.length; index++) {
       let capsule_ClassName = document.querySelector(`.capsule_${index}`).className;
       document.querySelector(`.capsule_${index}`).className = capsule_ClassName.replace(
-        `wieyi_${index}`,
+        `move_${index}`,
         ""
       );
     }
