@@ -1,4 +1,3 @@
-/*扭蛋机*/
 .gachaMachine {
     height: 80vh;
     top: 100px;
@@ -6,8 +5,8 @@
     right: 300px;
 }
 
-.gachaMachine .game_qu {
-    background: url(/images/game_ndj.png) no-repeat;
+.gachaMachine .background {
+    background: url(/images/gachaBase.png) no-repeat;
     width: 553px;
     height: 767px;
     left: 47px;
@@ -16,44 +15,18 @@
     z-index: 3;
 }
 
-.gachaMachine .game_go {
+.gachaMachine .decor {
     width: 134px;
     height: 50px;
     position: absolute;
     left: 210px;
     bottom: 225px;
-    background: url(/images/an_go.png) no-repeat;
+    background: url(/images/deco.png) no-repeat;
     font-size: 18px;
     color: #fff;
     line-height: 20px;
     text-align: center;
     padding-top: 90px;
-}
-
-.gachaMachine .wdjifen {
-    font-size: 20px;
-    color: #e00b37;
-    width: 128px;
-    height: 35px;
-    line-height: 35px;
-    position: absolute;
-    left: 206px;
-    bottom: 120px;
-    text-align: center
-}
-
-
-.gachaMachine .an_jfgr {
-    width: 100%;
-    text-align: center;
-    padding-top: 23px;
-    position: absolute;
-    left: 0px;
-    bottom: 60px;
-}
-
-.gachaMachine .an_jfgr img {
-    margin: 0px 7px;
 }
 
 
@@ -77,56 +50,13 @@
 }
 
 
-/*中奖*/
-.zonj_zezc {
-    width: 640px;
-    min-height: 1039px;
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    z-index: 4;
-    background: rgba(0, 0, 0, 0.85);
-    margin-left: -320px;
-}
-
-.zonj_zezc .jpzs {
-    width: 450px;
-    height: 286px;
-    position: relative；-webkit-border-radius:10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background: #fff;
-    margin: 300px auto 0px auto;
-    position: relative
-}
-
-.zonj_zezc .jpzs em {
-    height: 95px;
-    position: absolute;
-    right: 0px;
-    top: -50px;
-}
-
-
-.zonj_zezc .jpzs h2 {
-    font-size: 36px;
-    color: #ff1a4b;
-    text-align: center;
-    line-height:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 286px;
-}
-
-
-.qiu_1 {
+.capsule_1 {
     position: absolute;
     left: 55px;
     top: 272px;
 }
 
-.qiu_1:after {
+.capsule_1:after {
     content: "";
     position: absolute;
     left: 0;
@@ -135,17 +65,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_4.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_2 {
+.capsule_2 {
     position: absolute;
     left: 3px;
     top: 200px
 }
 
-.qiu_2:after {
+.capsule_2:after {
     content: "";
     position: absolute;
     left: 0;
@@ -154,17 +84,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_3.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_3 {
+.capsule_3 {
     position: absolute;
     left: 10px;
     top: 348px;
 }
 
-.qiu_3:after {
+.capsule_3:after {
     content: "";
     position: absolute;
     left: 0;
@@ -173,17 +103,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_1.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_4 {
+.capsule_4 {
     position: absolute;
     left: 130px;
     top: 227px;
 }
 
-.qiu_4:after {
+.capsule_4:after {
     content: "";
     position: absolute;
     left: 0;
@@ -192,17 +122,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_2.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_5 {
+.capsule_5 {
     position: absolute;
     left: 174px;
     top: 305px;
 }
 
-.qiu_5:after {
+.capsule_5:after {
     content: "";
     position: absolute;
     left: 0;
@@ -211,17 +141,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_4.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_6 {
+.capsule_6 {
     position: absolute;
     left: 100px;
     top: 348px;
 }
 
-.qiu_6:after {
+.capsule_6:after {
     content: "";
     position: absolute;
     left: 0;
@@ -230,17 +160,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_3.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_7 {
+.capsule_7 {
     position: absolute;
     left: 216px;
     top: 229px;
 }
 
-.qiu_7:after {
+.capsule_7:after {
     content: "";
     position: absolute;
     left: 0;
@@ -249,17 +179,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_1.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_8 {
+.capsule_8 {
     position: absolute;
     left: 265px;
     top: 306px;
 }
 
-.qiu_8:after {
+.capsule_8:after {
     content: "";
     position: absolute;
     left: 0;
@@ -268,17 +198,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_2.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_9 {
+.capsule_9 {
     position: absolute;
     left: 413px;
     top: 290px;
 }
 
-.qiu_9:after {
+.capsule_9:after {
     content: "";
     position: absolute;
     left: 0;
@@ -287,17 +217,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_3.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_10 {
+.capsule_10 {
     position: absolute;
     left: 348px;
     top: 348px;
 }
 
-.qiu_10:after {
+.capsule_10:after {
     content: "";
     position: absolute;
     left: 0;
@@ -306,17 +236,17 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_1.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
-.qiu_11 {
+.capsule_11 {
     position: absolute;
     left: 333px;
     top: 248px;
 }
 
-.qiu_11:after {
+.capsule_11:after {
     content: "";
     position: absolute;
     left: 0;
@@ -325,114 +255,114 @@
     height: 115px;
     display: block;
     background: url(/images/capsule_4.png) no-repeat;
-    animation: zhuan 1s linear forwards;
-    -webkit-animation: zhuan 1s linear forwards;
+    animation: toggle 1s linear forwards;
+    -webkit-animation: toggle 1s linear forwards;
 }
 
 
-/*掉落动画*/
-.diaol_1 {
-    animation: dialuodn 1s linear 0.9s backwards;
-    -webkit-animation: dialuodn 1s linear 0.9s backwards
+/*resulting rollout capsule*/
+.rollout_1 {
+    animation: results 1s linear 0.9s backwards;
+    -webkit-animation: results 1s linear 0.9s backwards
 }
 
-.diaol_1:after {
+.rollout_1:after {
     animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s
 }
 
-.diaol_2 {
-    animation: dialuodn 1s linear 0.6s backwards;
-    -webkit-animation: dialuodn 1s linear 0.6s backwards
+.rollout_2 {
+    animation: results 1s linear 0.6s backwards;
+    -webkit-animation: results 1s linear 0.6s backwards
 }
 
-.diaol_2:after {
+.rollout_2:after {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s
 }
 
-.diaol_3 {
-    animation: dialuodn 1s linear backwards;
-    -webkit-animation: dialuodn 1s linear backwards
+.rollout_3 {
+    animation: results 1s linear backwards;
+    -webkit-animation: results 1s linear backwards
 }
 
-.diaol_4 {
-    animation: dialuodn 1s linear 1.1s backwards;
-    -webkit-animation: dialuodn 1s linear 1.1s backwards
+.rollout_4 {
+    animation: results 1s linear 1.1s backwards;
+    -webkit-animation: results 1s linear 1.1s backwards
 }
 
-.diaol_4:after {
+.rollout_4:after {
     animation-delay: 1s;
     -webkit-animation-delay: 1s
 }
 
-.diaol_5 {
-    animation: dialuodn 1s linear 0.8s backwards;
-    -webkit-animation: dialuodn 1s linear 0.8s backwards
+.rollout_5 {
+    animation: results 1s linear 0.8s backwards;
+    -webkit-animation: results 1s linear 0.8s backwards
 }
 
-.diaol_5:after {
+.rollout_5:after {
     animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s
 }
 
-.diaol_6 {
-    animation: dialuodn 1s linear 0.4s backwards;
-    -webkit-animation: dialuodn 1s linear 0.4s backwards;
+.rollout_6 {
+    animation: results 1s linear 0.4s backwards;
+    -webkit-animation: results 1s linear 0.4s backwards;
 }
 
-.diaol_6:after {
+.rollout_6:after {
     animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s
 }
 
-.diaol_7 {
-    animation: dialuodn 1s linear 0.9s backwards;
-    -webkit-animation: dialuodn 1s linear 0.9s backwards
+.rollout_7 {
+    animation: results 1s linear 0.9s backwards;
+    -webkit-animation: results 1s linear 0.9s backwards
 }
 
-.diaol_7:after {
+.rollout_7:after {
     animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s
 }
 
-.diaol_8 {
-    animation: dialuodn 1s linear 0.6s backwards;
-    -webkit-animation: dialuodn 1s linear 0.6s backwards;
+.rollout_8 {
+    animation: results 1s linear 0.6s backwards;
+    -webkit-animation: results 1s linear 0.6s backwards;
 }
 
-.diaol_8:after {
+.rollout_8:after {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
 }
 
-.diaol_9 {
-    animation: dialuodn 1s linear 1.1s backwards;
-    -webkit-animation: dialuodn 1s linear 1.1s backwards;
+.rollout_9 {
+    animation: results 1s linear 1.1s backwards;
+    -webkit-animation: results 1s linear 1.1s backwards;
 }
 
-.diaol_9:after {
+.rollout_9:after {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
 
-.diaol_10 {
-    animation: dialuodn 1s linear 0.2s backwards;
-    -webkit-animation: dialuodn 1s linear 0.2s backwards;
+.rollout_10 {
+    animation: results 1s linear 0.2s backwards;
+    -webkit-animation: results 1s linear 0.2s backwards;
 }
 
-.diaol_11 {
-    animation: dialuodn 1s linear 1.4s backwards;
-    -webkit-animation: dialuodn 1s linear 1.4s backwards;
+.rollout_11 {
+    animation: results 1s linear 1.4s backwards;
+    -webkit-animation: results 1s linear 1.4s backwards;
 }
 
-.diaol_11:after {
+.rollout_11:after {
     animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
 }
 
 
-.gachaMachine .zjdl {
+.gachaMachine .dispenseOutput {
     width: 110px;
     height: 90px;
     padding: 32px 0px 0px 20px;
@@ -452,20 +382,14 @@
 }
 
 
-.gachaMachine .dila_Y {
-    width: 110px;
-    height: 90px;
-    animation: cujpin 0.7s ease-out forwards;
-    -webkit-animation: cujpin 0.7s ease-out forwards;
-}
 
-.gachaMachine .diaL_one {
+.gachaMachine .drop_one {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.gachaMachine .diaL_one:after {
+.gachaMachine .drop_one:after {
     content: "";
     position: absolute;
     left: 0;
@@ -474,17 +398,17 @@
     height: 85px;
     display: block;
     background: url(/images/outcap_1.png) no-repeat;
-    animation: fanda 0.7s ease-out forwards;
-    -webkit-animation: fanda 0.7s ease-out forwards;
+    animation: zoomIn 0.7s ease-out forwards;
+    -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
 
-.gachaMachine .diaL_two {
+.gachaMachine .drop_two {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.gachaMachine .diaL_two:after {
+.gachaMachine .drop_two:after {
     content: "";
     position: absolute;
     left: 0;
@@ -493,17 +417,17 @@
     height: 85px;
     display: block;
     background: url(/images/outcap_2.png) no-repeat;
-    animation: fanda 0.7s ease-out forwards;
-    -webkit-animation: fanda 0.7s ease-out forwards;
+    animation: zoomIn 0.7s ease-out forwards;
+    -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
 
-.gachaMachine .diaL_three {
+.gachaMachine .drop_three {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.gachaMachine .diaL_three:after {
+.gachaMachine .drop_three:after {
     content: "";
     position: absolute;
     right: -100px;
@@ -512,17 +436,17 @@
     height: 85px;
     display: block;
     background: url(/images/outcap_3.png) no-repeat;
-    animation: fanda 0.7s ease-out forwards;
-    -webkit-animation: fanda 0.7s ease-out forwards;
+    animation: zoomIn 0.7s ease-out forwards;
+    -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
 
-.gachaMachine .diaL_four {
+.gachaMachine .drop_four {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.gachaMachine .diaL_four:after {
+.gachaMachine .drop_four:after {
     content: "";
     position: absolute;
     left: 0;
@@ -531,34 +455,13 @@
     height: 85px;
     display: block;
     background: url(/images/outcap_4.png) no-repeat;
-    animation: fanda 0.7s ease-out forwards;
-    -webkit-animation: fanda 0.7s ease-out forwards;
+    animation: zoomIn 0.7s ease-out forwards;
+    -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
 
 
 
-
-@-webkit-keyframes cujpin {
-    0% {
-        -webkit-transform: translateY(-100px);
-    }
-
-    100% {
-        -webkit-transform: translateY(0);
-    }
-}
-
-@keyframes cujpin {
-    0% {
-        transform: translateY(-100px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fanda {
+@keyframes zoomIn {
     0% {
         transform: scale(0.7);
     }
@@ -568,7 +471,7 @@
     }
 }
 
-@-webkit-keyframes fanda {
+@-webkit-keyframes zoomIn {
     0% {
         -webkit-transform: scale(0.7);
     }
@@ -676,7 +579,7 @@
 
 
 
-@keyframes dialuodn {
+@keyframes results {
     0% {
         transform: translateY(-200%);
         opacity: 0
@@ -735,7 +638,7 @@
 }
 
 
-@-webkit-keyframes dialuodn {
+@-webkit-keyframes results {
     0% {
         -webkit-transform: translateY(-200%);
         opacity: 0
@@ -794,7 +697,7 @@
 }
 
 
-@-webkit-keyframes zhuan {
+@-webkit-keyframes toggle {
     0% {
         -webkit-transform: rotate(0)
     }
@@ -804,7 +707,7 @@
     }
 }
 
-@keyframes zhuan {
+@keyframes toggle {
     0% {
         transform: rotate(0)
     }

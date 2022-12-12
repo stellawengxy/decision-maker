@@ -11,7 +11,7 @@ let HMLTStr = ``;
 const init = () => {
   if (choicesListLoc && choicesListLoc.length > 0) {
     for (let index = 1; index <= choicesListLoc.length; index++) {
-      HMLTStr += `<span class="qiu_${index} diaol_${index}"></span>`;
+      HMLTStr += `<span class="capsule_${index} rollout_${index}"></span>`;
     }
     capsuleEle.innerHTML = HMLTStr;
   }
@@ -21,22 +21,22 @@ gachaBtn.addEventListener("click", () => {
     content_text.innerHTML = 'Your Answer';
   let number = Math.floor(choicesListLoc.length * Math.random() + 1);
   for (let index = 1; index <= choicesListLoc.length; index++) {
-    let qiu_ClassName = document.querySelector(`.qiu_${index}`).className;
-    document.querySelector(`.qiu_${index}`).className = qiu_ClassName.replace(
-      `diaol_${index}`,
+    let capsule_ClassName = document.querySelector(`.capsule_${index}`).className;
+    document.querySelector(`.capsule_${index}`).className = capsule_ClassName.replace(
+      `rollout_${index}`,
       ""
     );
-    qiu_ClassName = document.querySelector(`.qiu_${index}`).className;
-    // console.log(`${qiu_ClassName} wieyi_${index}`);
+    capsule_ClassName = document.querySelector(`.capsule_${index}`).className;
+    // console.log(`${capsule_ClassName} wieyi_${index}`);
     document.querySelector(
-      `.qiu_${index}`
-    ).className = `${qiu_ClassName} wieyi_${index}`;
+      `.capsule_${index}`
+    ).className = `${capsule_ClassName} wieyi_${index}`;
   }
 
   setTimeout(function () {
     for (let index = 1; index <= choicesListLoc.length; index++) {
-      let qiu_ClassName = document.querySelector(`.qiu_${index}`).className;
-      document.querySelector(`.qiu_${index}`).className = qiu_ClassName.replace(
+      let capsule_ClassName = document.querySelector(`.capsule_${index}`).className;
+      document.querySelector(`.capsule_${index}`).className = capsule_ClassName.replace(
         `wieyi_${index}`,
         ""
       );
@@ -44,31 +44,31 @@ gachaBtn.addEventListener("click", () => {
   }, 1100);
 
   setTimeout(function () {
-    let curClass = document.querySelector(".zjdl span").className;
+    let curClass = document.querySelector(".dispenseOutput span").className;
     switch (number % 4) {
       case 1:
-        curClass += " diaL_one";
-        document.querySelector(".zjdl span").className = curClass;
+        curClass += " drop_one";
+        document.querySelector(".dispenseOutput span").className = curClass;
         break;
       case 2:
-        curClass += " diaL_two";
-        document.querySelector(".zjdl span").className = curClass;
+        curClass += " drop_two";
+        document.querySelector(".dispenseOutput span").className = curClass;
         break;
       case 3:
-        curClass += " diaL_three";
-        document.querySelector(".zjdl span").className = curClass;
+        curClass += " drop_three";
+        document.querySelector(".dispenseOutput span").className = curClass;
         break;
       case 0:
-        curClass += " diaL_four";
-        document.querySelector(".zjdl span").className = curClass;
+        curClass += " drop_four";
+        document.querySelector(".dispenseOutput span").className = curClass;
         break;
     }
 
-    let currentClass = document.querySelector(".zjdl").className;
-    currentClass = currentClass += ' dila_Y';
-    document.querySelector(".zjdl").className = currentClass;
+    let currentClass = document.querySelector(".dispenseOutput").className;
+    currentClass = currentClass += ' drop_Y';
+    document.querySelector(".dispenseOutput").className = currentClass;
 
-    // $(".zjdl").removeClass("none").addClass("dila_Y");
+    // $(".dispenseOutput").removeClass("none").addClass("drop_Y");
     //  setTimeout(function (){
     //    // 出奖品
     //  for (var i = 0; i < jiangpin.length; i++ ) {
@@ -82,10 +82,10 @@ gachaBtn.addEventListener("click", () => {
 
   setTimeout(function () {
     gachaBtn.disabled = false;
-    let currentClass = document.querySelector(".zjdl").className;
-    currentClass = currentClass.replace(`dila_Y`, "none");
-    document.querySelector(".zjdl").className = currentClass;
-    document.querySelector(".zjdl span").removeAttribute("class");
+    let currentClass = document.querySelector(".dispenseOutput").className;
+    currentClass = currentClass.replace(`drop_Y`, "none");
+    document.querySelector(".dispenseOutput").className = currentClass;
+    document.querySelector(".dispenseOutput span").removeAttribute("class");
 
 
     content_text.innerHTML = choicesListLoc[number-1];
