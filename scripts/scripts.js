@@ -1,15 +1,6 @@
-/* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
 
 
-
-   
-
-
-
-
-
-/* input choices */
 const form_wake = document.querySelector("#form");
 const choicesListLoc = JSON.parse(sessionStorage.getItem('choicesList'));
 let userInput = [];
@@ -80,13 +71,6 @@ function removeField(minusElement) {
   // second parameter: how many places/items we want to remove
 
   userInput.splice(
-    // to grab the index, call the indexOf method
-    // indexOf method: 
-    // takes in one parameter, a value in the array
-    // returns and index/location of where the value is in the array
-    
-    // to get the value,  call minusElement.parentElement.firstElementChild.value
-    // the first child of the parent is always the textbox
     
     userInput.indexOf(minusElement.parentElement.firstElementChild.value),
     1);

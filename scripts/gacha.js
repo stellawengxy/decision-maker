@@ -68,16 +68,6 @@ gachaBtn.addEventListener("click", () => {
     currentClass = currentClass += ' dila_Y';
     document.querySelector(".zjdl").className = currentClass;
 
-    // $(".zjdl").removeClass("none").addClass("dila_Y");
-    //  setTimeout(function (){
-    //    // 出奖品
-    //  for (var i = 0; i < jiangpin.length; i++ ) {
-    //    if (number == i) {
-    //      $("#jianpin_one").show();
-    //      $("#jianpin_name").text(jiangpin[number])
-    //    }
-    //  }
-    // },900);
   }, 1100);
 
   setTimeout(function () {
