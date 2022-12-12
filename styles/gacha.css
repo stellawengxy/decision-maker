@@ -1,12 +1,12 @@
 /*扭蛋机*/
-.niu_danji {
+.gachaMachine {
     height: 80vh;
     top: 100px;
     position: relative;
     right: 300px;
 }
 
-.niu_danji .game_qu {
+.gachaMachine .game_qu {
     background: url(/images/game_ndj.png) no-repeat;
     width: 553px;
     height: 767px;
@@ -16,7 +16,7 @@
     z-index: 3;
 }
 
-.niu_danji .game_go {
+.gachaMachine .game_go {
     width: 134px;
     height: 50px;
     position: absolute;
@@ -30,7 +30,7 @@
     padding-top: 90px;
 }
 
-.niu_danji .wdjifen {
+.gachaMachine .wdjifen {
     font-size: 20px;
     color: #e00b37;
     width: 128px;
@@ -43,7 +43,7 @@
 }
 
 
-.niu_danji .an_jfgr {
+.gachaMachine .an_jfgr {
     width: 100%;
     text-align: center;
     padding-top: 23px;
@@ -52,13 +52,13 @@
     bottom: 60px;
 }
 
-.niu_danji .an_jfgr img {
+.gachaMachine .an_jfgr img {
     margin: 0px 7px;
 }
 
 
 
-.niu_danji .dan_gund {
+.gachaMachine .capsule {
     width: 500px;
     height: 447px;
     position: absolute;
@@ -71,7 +71,7 @@
     overflow: hidden
 }
 
-.niu_danji .dan_gund span {
+.gachaMachine .capsule span {
     width: 115px;
     height: 115px;
 }
@@ -134,7 +134,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_4.png) no-repeat;
+    background: url(/images/capsule_4.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -153,7 +153,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_3.png) no-repeat;
+    background: url(/images/capsule_3.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -172,7 +172,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_1.png) no-repeat;
+    background: url(/images/capsule_1.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -191,7 +191,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_2.png) no-repeat;
+    background: url(/images/capsule_2.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -210,7 +210,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_4.png) no-repeat;
+    background: url(/images/capsule_4.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -229,7 +229,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_3.png) no-repeat;
+    background: url(/images/capsule_3.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -248,7 +248,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_1.png) no-repeat;
+    background: url(/images/capsule_1.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -267,7 +267,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_2.png) no-repeat;
+    background: url(/images/capsule_2.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -286,7 +286,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_3.png) no-repeat;
+    background: url(/images/capsule_3.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -305,7 +305,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_1.png) no-repeat;
+    background: url(/images/capsule_1.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -324,7 +324,7 @@
     width: 115px;
     height: 115px;
     display: block;
-    background: url(/images/canpin_4.png) no-repeat;
+    background: url(/images/capsule_4.png) no-repeat;
     animation: zhuan 1s linear forwards;
     -webkit-animation: zhuan 1s linear forwards;
 }
@@ -432,7 +432,7 @@
 }
 
 
-.niu_danji .zjdl {
+.gachaMachine .zjdl {
     width: 110px;
     height: 90px;
     padding: 32px 0px 0px 20px;
@@ -442,7 +442,7 @@
     z-index: 2;
 }
 
-.niu_danji .medon {
+.gachaMachine .dispenser {
     width: 136px;
     height: 138px;
     position: absolute;
@@ -452,20 +452,20 @@
 }
 
 
-.niu_danji .dila_Y {
+.gachaMachine .dila_Y {
     width: 110px;
     height: 90px;
     animation: cujpin 0.7s ease-out forwards;
     -webkit-animation: cujpin 0.7s ease-out forwards;
 }
 
-.niu_danji .diaL_one {
+.gachaMachine .diaL_one {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.niu_danji .diaL_one:after {
+.gachaMachine .diaL_one:after {
     content: "";
     position: absolute;
     left: 0;
@@ -473,18 +473,18 @@
     width: 85px;
     height: 85px;
     display: block;
-    background: url(/images/zj_1.png) no-repeat;
+    background: url(/images/outcap_1.png) no-repeat;
     animation: fanda 0.7s ease-out forwards;
     -webkit-animation: fanda 0.7s ease-out forwards;
 }
 
-.niu_danji .diaL_two {
+.gachaMachine .diaL_two {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.niu_danji .diaL_two:after {
+.gachaMachine .diaL_two:after {
     content: "";
     position: absolute;
     left: 0;
@@ -492,18 +492,18 @@
     width: 85px;
     height: 85px;
     display: block;
-    background: url(/images/zj_2.png) no-repeat;
+    background: url(/images/outcap_2.png) no-repeat;
     animation: fanda 0.7s ease-out forwards;
     -webkit-animation: fanda 0.7s ease-out forwards;
 }
 
-.niu_danji .diaL_three {
+.gachaMachine .diaL_three {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.niu_danji .diaL_three:after {
+.gachaMachine .diaL_three:after {
     content: "";
     position: absolute;
     right: -100px;
@@ -511,18 +511,18 @@
     width: 85px;
     height: 85px;
     display: block;
-    background: url(/images/zj_3.png) no-repeat;
+    background: url(/images/outcap_3.png) no-repeat;
     animation: fanda 0.7s ease-out forwards;
     -webkit-animation: fanda 0.7s ease-out forwards;
 }
 
-.niu_danji .diaL_four {
+.gachaMachine .diaL_four {
     width: 85px;
     height: 85px;
     position: relative;
 }
 
-.niu_danji .diaL_four:after {
+.gachaMachine .diaL_four:after {
     content: "";
     position: absolute;
     left: 0;
@@ -530,7 +530,7 @@
     width: 85px;
     height: 85px;
     display: block;
-    background: url(/images/zj_4.png) no-repeat;
+    background: url(/images/outcap_4.png) no-repeat;
     animation: fanda 0.7s ease-out forwards;
     -webkit-animation: fanda 0.7s ease-out forwards;
 }

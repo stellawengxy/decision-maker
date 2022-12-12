@@ -2,8 +2,8 @@ let gachaBtn = document.querySelector("#gachaBtn");
 // history list
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 let content_text = document.querySelector('#content_text');
-// dan_gund Element
-let danGundEle = document.querySelector("#dan_gund");
+// capsule Element
+let capsuleEle = document.querySelector("#capsule");
 
 let HMLTStr = ``;
 
@@ -13,7 +13,7 @@ const init = () => {
     for (let index = 1; index <= choicesListLoc.length; index++) {
       HMLTStr += `<span class="qiu_${index} diaol_${index}"></span>`;
     }
-    danGundEle.innerHTML = HMLTStr;
+    capsuleEle.innerHTML = HMLTStr;
   }
 };
 gachaBtn.addEventListener("click", () => {
