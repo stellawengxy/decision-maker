@@ -802,7 +802,7 @@ border: 2px solid rgb(247, 129, 149);
   font-weight: bolder;
   align-content: center;
   border-radius: 25px;
-  background-color: rgb(5, 178, 157);
+  background-color: rgb(248, 119, 141);
   color: white;
   padding: 3rem;
   width: 50%;
@@ -831,4 +831,8 @@ border: 2px solid rgb(247, 129, 149);
 
   color: rgb(41, 68, 76);
   font-size: 4rem;
+}
+
+#info-page a:hover {
+  color: rgb(253, 81, 109);
 }
