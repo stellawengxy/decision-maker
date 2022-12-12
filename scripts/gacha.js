@@ -1,13 +1,13 @@
 let gachaBtn = document.querySelector("#gachaBtn");
-// history list
+
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 let content_text = document.querySelector('#content_text');
-// capsule Element
+
 let capsuleEle = document.querySelector("#capsule");
 
 let HMLTStr = ``;
 
-// init
+
 const init = () => {
   if (choicesListLoc && choicesListLoc.length > 0) {
     for (let index = 1; index <= choicesListLoc.length; index++) {

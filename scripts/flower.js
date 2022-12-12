@@ -1,9 +1,9 @@
-// Click to Start Button
+
 const flowerStartBtnEle = document.querySelector("#flowerStartBtn");
 const rosePetalsList = document.querySelectorAll(".rose-petals div");
-// flowerAnswerBox element
+
 const flowerAnswerBoxInpEle = document.querySelector("#flowerAnswerBox");
-// history list
+
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 let conut = 1;
 

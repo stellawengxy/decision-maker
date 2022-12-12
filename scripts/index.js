@@ -1,8 +1,7 @@
 
-// 每次刷新都会将localStorage清空
 let choicesList = JSON.parse(sessionStorage.getItem("choicesList"));
 let HTMLStr = ``;
-// 如果里面存在一个值的话 就将其清空
+
 if (choicesList && choicesList.length > 0) {
   console.log(choicesList);
   choicesList.forEach((item) => {
