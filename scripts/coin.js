@@ -1,6 +1,10 @@
 // 在本地存储中获取数据
 
+<<<<<<< HEAD
+let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
+=======
 let choicesListLoc = JSON.parse(localStorage.getItem("choicesList"));
+>>>>>>> a3e61b94312127d033c016aae2a9d44306689b1a
 
 const tailsValue = choicesListLoc[1];
 const headsValue = choicesListLoc[0];
@@ -61,4 +65,8 @@ function disableButton() {
     flipBtn.disabled = false;
     answerBoxP.innerHTML = choicesListLoc[randoms === 0 ? 1 : 0];
   }, 3100);
+<<<<<<< HEAD
+};
+=======
 }
+>>>>>>> a3e61b94312127d033c016aae2a9d44306689b1a

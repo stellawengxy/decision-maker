@@ -153,77 +153,77 @@ li {
 
 
   .notes{
-	padding: 20px;
+  padding: 20px;
 }
 
 .notes p{
-	border-bottom: thin dotted #d4d4d4;
-	padding: 20px 10px 0px 0px;
-	font-style: italic;
-	font-size: 18px;
+  border-bottom: thin dotted #d4d4d4;
+  padding: 20px 10px 0px 0px;
+  font-style: italic;
+  font-size: 18px;
 }
 
 .notes p span{
-	font-size: 16px;
-	float:  right;
-	cursor: pointer;
-	display: inline-block;
+  font-size: 16px;
+  float:  right;
+  cursor: pointer;
+  display: inline-block;
 }
 .notes p span.mark{
-	color: green;
-	font-size: 30px;
-	transform: translateY(-10px);
+  color: green;
+  font-size: 30px;
+  transform: translateY(-10px);
 }
 
 form{
-	width:  100%;
+  width:  100%;
 }
 
 .field{
-	margin-bottom: 10px;
-	display: flex;
-	transition: opacity 0.3s;
+  margin-bottom: 10px;
+  display: flex;
+  transition: opacity 0.3s;
 }
 
 .field input{
-	padding: 5px 10px;
-	width: 100%;
-	border: none;
-	 border: thin solid #d4d4d4; 
-	font-size: 20px;
-	color: #888;
-	font-family: ubuntu, sans-serif;
-	background-color: #f9f9f9;
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+   border: thin solid #d4d4d4; 
+  font-size: 20px;
+  color: #888;
+  font-family: ubuntu, sans-serif;
+  background-color: #f9f9f9;
 }
 .field input:focus{
-	outline: none;
+  outline: none;
 }
 
 .field span{
-	display: inline-block;
-	margin-left: 10px;
-	cursor: pointer;
-	background-color: #f9f9f9;
-	padding: 10px;
-	font-size: 20px;
-	transition: all 0.3s;
-	font-weight: bold;
-	border: thin solid #d4d4d4; 
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 20px;
+  transition: all 0.3s;
+  font-weight: bold;
+  border: thin solid #d4d4d4; 
   color: rgb(245, 141, 159);
 }
 .field span:last-child{
-	display: none;
-	padding: 12px;
+  display: none;
+  padding: 12px;
 }
 .field span:hover{
-	background-color: green;
-	border: thin solid green;
-	color: #fff;
+  background-color: green;
+  border: thin solid green;
+  color: #fff;
 }
 .field span:last-child:hover{
-	background-color: red;
-	border: thin solid red;
-	color: #fff;
+  background-color: red;
+  border: thin solid red;
+  color: #fff;
 }
 
 button.next{
@@ -275,20 +275,26 @@ button.next{
 }
 
 
-.rose .rose-petals > div:nth-child(2) {
+
+.flower_animation{
   -moz-animation: openRose2 3s ease-in-out;
   -webkit-animation: openRose2 3s ease-in-out;
   animation: openRose2 3s ease-in-out;
   -moz-animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  /* -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; */
+}
+
+.rose .rose-petals > div:nth-child(2) {
+
+
   z-index: 7;
   background: #9e1818;
   top: 10px;
   height: 70px;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
 }
 
 .rose .rose-petals > div:nth-child(3) {
@@ -698,6 +704,17 @@ font-weight: 600;
 }
 
 
+#content{
+  border-radius: 50px;
+  width: 300px;
+  color: blue;
+  border: 1px solid red;
+  position: absolute;
+  left: 17rem;
+  bottom: 10rem;
+  font-size: 60px;
+}
+
 /*other*/
 
 
@@ -750,4 +767,27 @@ width: 50%;
 height: 50%;
 margin-bottom: 30px;
 border: 2px solid rgb(247, 129, 149);
+}
+
+
+
+/* navbar css */
+
+.navBar{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.navBar ul li{
+
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:transparent;
+  padding: 0px;
+}
+
+.navBar ul li img{
+  cursor: pointer;
+  width: 60px;
 }

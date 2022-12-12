@@ -1,121 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
-    <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  
-  
-  <body>
-    <!-- YOUR HTML GOES HERE -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- PUT A TITLE IN HERE -->
+  <title>This is the demo</title>
+  <!-- PUT A DESCRIPTION IN HERE -->
+  <meta name="description" content="describe content of the page here...." />
+  <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+  <link rel="stylesheet" href="styles.normalize.css" />
+  <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+  <!-- LINK TO YOUR STYLES -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+  <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+  <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+
+<body>
+  <!-- YOUR HTML GOES HERE -->
 
 
 
-<article>
-
-  
-  <h1>Decision Maker</h1>
-  <h2 id="subtitle">Having a hard time making your decision?<br>No worries. We are here to help you!</h2>
+  <article>
 
 
+    <h1>Decision Maker</h1>
+    <h2 id="subtitle">Having a hard time making your decision?<br>No worries. We are here to help you!</h2>
 
 
-  <div>
-    <ul class="slider">
-      <li>
-        <h2>What's your question?</h2>
-        <div class="field">
-          <input type="text" id="questionInput">
-        
-    </div>
- 
-  </li>
-   <li>
-        <h2>What are your choices?</h2>
 
-        <form action="" method="post" autocomplete="off">
 
+    <div>
+      <ul class="slider">
+        <li>
+          <h2>What's your question?</h2>
           <div class="field">
-            <input id="userinput" type="text" name="notes[]">
-            <span onclick="addField(this)">+</span>
-            <span onclick="removeField(this)">-</span>
+            <input type="text" id="questionInput">
+
           </div>
 
-          <button class="next"> </button>
-      
-      
-        </form>
-      
-        <script src="script.js"></script> 
-        
-    
-  </li>
+        </li>
+        <li>
+          <h2>What are your choices?</h2>
 
-  <li>
-        <h2>Here are your options</h2>
-        <div id="methods">
-          
+          <div id="form" >
 
-    <div class="method">
+            <div class="field">
+              <input id="userinput" type="text" name="notes[]">
+              <span onclick="addField(this)">+</span>
+              <span onclick="removeField(this)">-</span>
+            </div>
 
-          <a id="flower" href="flower.html" ><img id="flowerimage" src="https://cdn-icons-png.flaticon.com/512/3077/3077026.png">  </a>
-          <a lass="links" href="flower.html">Flower of Answers</a>
-
-        </div>
+            <button class="next"></button>
 
 
-        <div class="method">
+          </div>
 
-          <a id="gacha" href="gacha.html"> <img id="gachaimage" src="https://cdn-icons-png.flaticon.com/512/1907/1907727.png"> </a>
-          <a lass="links" href="gacha.html">Gacha</a>
-
-        </div>
+          <script src="script.js"></script>
 
 
-        <div class="method">
+        </li>
 
-        <a class="coinlink"id="coinlink" href="coin.html"> <img id="coinimage" src="https://i.pinimg.com/originals/bd/f4/a4/bdf4a4035d7aa53773dc70d7c12c1692.png"> </a> 
-        <a class="coinlink" href="coin.html">Coin Flipping</a>
+        <li>
+          <h2>Here are your options</h2>
+          <div id="methods">
 
-        </div>
-          
-       
-          
+
+            <div class="method">
+
+              <a id="flower" href="flower.html"><img id="flowerimage"
+                  src="https://cdn-icons-png.flaticon.com/512/3077/3077026.png"> </a>
+              <a lass="links" href="flower.html">Flower of Answers</a>
+
+            </div>
+
+
+            <div class="method">
+
+              <a id="gacha" href="gacha.html"> <img id="gachaimage"
+                  src="https://cdn-icons-png.flaticon.com/512/1907/1907727.png"> </a>
+              <a lass="links" href="gacha.html">Gacha</a>
+
+            </div>
+
+
+            <div class="method">
+
+              <a class="coinlink" id="coinlink" href="coin.html"> <img id="coinimage"
+                  src="https://i.pinimg.com/originals/bd/f4/a4/bdf4a4035d7aa53773dc70d7c12c1692.png"> </a>
+              <a class="coinlink" href="coin.html">Coin Flipping</a>
+
+            </div>
+
+
+
+          </div>
+
+        </li>
+
+
+
+      </ul>
     </div>
 
-  </li>
 
 
-
-  </ul>
-  </div>
-
-
-  
 
 
   </article>
-  
-  
-  
-  
 
 
- 
-  
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-  </body>
+
+
+
+
+
+
+  <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+</body>
+
 </html>

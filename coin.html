@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/scripts.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/coin.js" defer></script>
 </head>
+
 <body id="coins">
 
-<div class="stats-container">
-  <h2 class="individualtitle">Coin Flipping</h2>
-  <div class="stats">
-    <p id="heads-count">Heads: </p>
-    <p id="tails-count">Tails: </p>
-  </div>
-  <div class="coin">
-    <div class="heads">
-     <img src="https://lh3.googleusercontent.com/T7JBKTufYIG68YaKrpMhFAzSK-WnLG2f1LLULALBa7kkO4kfaGvNmtlJDFzIKBMRpcQjzJr0wnv-UmnGSK1ZL3TGr2plaJO6Un61DzxfBxomI4fEHg82aemKw90qCVP_Y0NcrL6I=w600-h315-p-k">
+  <div class="stats-container">
+    <h2 class="individualtitle">Coin Flipping</h2>
+    <div class="stats">
+      <p>Heads:
+        <span id="heads-count"></span>
 
+      </p>
+      <p>Tails:
+        <span id="tails-count"></span>
+      </p>
+    </div>
+    <div class="coin">
+      <div class="heads">
+        <img
+          src="https://lh3.googleusercontent.com/T7JBKTufYIG68YaKrpMhFAzSK-WnLG2f1LLULALBa7kkO4kfaGvNmtlJDFzIKBMRpcQjzJr0wnv-UmnGSK1ZL3TGr2plaJO6Un61DzxfBxomI4fEHg82aemKw90qCVP_Y0NcrL6I=w600-h315-p-k">
+      </div>
+      <div class="tails">
+        <img
+          src="https://lh3.googleusercontent.com/bZ7C_I9N4v5uW4kAsgl_DC_LBAbYA-OcEFbzKdfpdxYCp-Eg-1j0WrID1bE0R1z-hk0sohn828_kFww-LnOOVoGRITW1FbC10z-CSuQe9ZpzQitxrlwCi-48spJLsF2MiLwjuwaA=w600-h315-p-k">
+      </div>
+    </div>
+
+
+    <div id="answer-box">
+      <p>Answer</p>
+    </div>
+    <div class="coin-buttons">
+      <button id="flip-button">
+        Flip Coin
+      </button>
 
     </div>
-    <div class="tails">
-     <img src="https://lh3.googleusercontent.com/bZ7C_I9N4v5uW4kAsgl_DC_LBAbYA-OcEFbzKdfpdxYCp-Eg-1j0WrID1bE0R1z-hk0sohn828_kFww-LnOOVoGRITW1FbC10z-CSuQe9ZpzQitxrlwCi-48spJLsF2MiLwjuwaA=w600-h315-p-k">
 
-
-
-    </div>
   </div>
-
-
-  <div id="answer-box">
-    <p>Answer</p>
+  <div class="navBar">
+    <ul>
+      <li>
+        <a href="/index.html">
+          <img src="/images/home.png" alt="home">
+        </a>
+      </li>
+      <li>
+        <a href="/info.html">
+          <img src="/images/info.png" alt="info">
+        </a>
+      </li>
+    </ul>
   </div>
-  <div class="coin-buttons">
-    <button id="flip-button">
-      Flip Coin
-    </button>
-    
-  </div>
-  
-</div>
 
 </body>
+
 </html>
