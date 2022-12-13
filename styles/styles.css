@@ -670,7 +670,7 @@ font-weight: 600;
 }
 
 .gachaMachine .background {
-  background: url(/images/gachaBase.png) no-repeat;
+  background: url(../images/gachaBase.png) no-repeat;
   width: 553px;
   height: 767px;
   left: 47px;
@@ -685,7 +685,7 @@ font-weight: 600;
   position: absolute;
   left: 210px;
   bottom: 225px;
-  background: url(/images/deco.png) no-repeat;
+  background: url(../images/deco.png) no-repeat;
   font-size: 18px;
   color: #fff;
   line-height: 20px;
@@ -728,7 +728,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_4.png) no-repeat;
+  background: url(../images/capsule_4.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -747,7 +747,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_3.png) no-repeat;
+  background: url(../images/capsule_3.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -766,7 +766,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_1.png) no-repeat;
+  background: url(../images/capsule_1.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -785,7 +785,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_2.png) no-repeat;
+  background: url(../images/capsule_2.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -804,7 +804,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_4.png) no-repeat;
+  background: url(../images/capsule_4.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -823,7 +823,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_3.png) no-repeat;
+  background: url(../images/capsule_3.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -842,7 +842,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_1.png) no-repeat;
+  background: url(../images/capsule_1.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -861,7 +861,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_2.png) no-repeat;
+  background: url(../images/capsule_2.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -880,7 +880,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_3.png) no-repeat;
+  background: url(../images/capsule_3.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -899,7 +899,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_1.png) no-repeat;
+  background: url(../images/capsule_1.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -918,7 +918,7 @@ font-weight: 600;
   width: 115px;
   height: 115px;
   display: block;
-  background: url(/images/capsule_4.png) no-repeat;
+  background: url(../images/capsule_4.png) no-repeat;
   animation: toggle 1s linear forwards;
   -webkit-animation: toggle 1s linear forwards;
 }
@@ -1061,7 +1061,7 @@ font-weight: 600;
   width: 85px;
   height: 85px;
   display: block;
-  background: url(/images/outcap_1.png) no-repeat;
+  background: url(../images/outcap_1.png) no-repeat;
   animation: zoomIn 0.7s ease-out forwards;
   -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
@@ -1080,7 +1080,7 @@ font-weight: 600;
   width: 85px;
   height: 85px;
   display: block;
-  background: url(/images/outcap_2.png) no-repeat;
+  background: url(../images/outcap_2.png) no-repeat;
   animation: zoomIn 0.7s ease-out forwards;
   -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
@@ -1099,7 +1099,7 @@ font-weight: 600;
   width: 85px;
   height: 85px;
   display: block;
-  background: url(/images/outcap_3.png) no-repeat;
+  background: url(../images/outcap_3.png) no-repeat;
   animation: zoomIn 0.7s ease-out forwards;
   -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
@@ -1118,7 +1118,7 @@ font-weight: 600;
   width: 85px;
   height: 85px;
   display: block;
-  background: url(/images/outcap_4.png) no-repeat;
+  background: url(../images/outcap_4.png) no-repeat;
   animation: zoomIn 0.7s ease-out forwards;
   -webkit-animation: zoomIn 0.7s ease-out forwards;
 }
