@@ -3,6 +3,8 @@ const flowerStartBtnEle = document.querySelector("#flowerStartBtn");
 const rosePetalsList = document.querySelectorAll(".rose-petals div");
 
 const flowerAnswerBoxInpEle = document.querySelector("#flowerAnswerBox");
+// history list
+
 let choicesListLoc = JSON.parse(sessionStorage.getItem("choicesList"));
 let conut = 1;
 

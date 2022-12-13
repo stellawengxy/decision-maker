@@ -2033,3 +2033,34 @@ border: 2px solid rgb(247, 129, 149);
   cursor: pointer;
   width: 60px;
 }
+
+#info-page h2 {
+color: black;
+font-size: 4rem;
+
+}
+
+#info-page {
+  color: black;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 2rem;
+}
+#info-page a:hover {
+  color: #f05858;
+}
+
+.info-box {
+  background-color: rgb(243, 122, 142);
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    align-content: center;
+    border-radius: 25px;
+    padding: 30px;
+    color: #fff;
+
+    margin: 2rem;
+
+}
+
